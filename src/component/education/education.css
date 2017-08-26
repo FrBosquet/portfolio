@@ -1,0 +1,54 @@
+.education{
+  position: relative;
+  color: white;
+  background-color: #f12b59;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.education:before{
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: -2px;
+  background-color: white;
+  height: 40px;
+  width: 110%;
+  transform: rotate(-1deg);
+  content: "";
+}
+
+.education:after{
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  left: -2px;
+  background-color: white;
+  height: 40px;
+  width: 110%;
+  transform: rotate(1deg);
+  content: "";
+}
+
+.education .carrousel{
+  width: 580px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.education .carrousel .page{
+  text-align: left;
+  width: 290px;
+}
+
+@media (max-width: 580px) {
+  .education .carrousel{
+    padding: 0 10px;
+    width: calc( 100% - 20px );
+  }
+  .education .carrousel .page{
+    width: 100%;
+  }
+}

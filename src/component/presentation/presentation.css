@@ -1,0 +1,41 @@
+.presentation{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+.presentation .avatar{
+  width: 256px;
+  border-radius: 50%;
+  border: 10px solid #f12b59;
+}
+
+.presentation .title h1{
+  font-size: 2.5em;
+  color: #f12b59;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 35px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+.presentation .title h1 img{
+  height: 30px;
+}
+
+.presentation .title h5{
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+.presentation .resume p{
+  max-width: 580px;
+  text-align: justify;
+}
+
+@media (max-width: 580px) {
+  .presentation .resume p{
+    padding: 0 10px;
+  }
+}

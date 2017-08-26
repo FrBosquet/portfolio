@@ -1,0 +1,40 @@
+.contact{
+  position: relative;
+  color: white;
+  background-color: #f12b59;
+  padding: 30px 0;
+  padding-bottom: 10px;
+  overflow: hidden;
+
+}
+
+.contact:before{
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: -2px;
+  background-color: white;
+  height: 40px;
+  width: 110%;
+  transform: rotate(-1deg);
+  content: "";
+}
+
+.contact .email a, .contact .email a:focus, .contact .email a:visited, .contact .email a:hover, .contact .email a:active{
+  text-decoration: none;
+  font-weight: bold;
+  outline: none;
+  color: white;
+}
+
+.contact .networks a img {
+  height: 56px;
+}
+
+.contact .networks a {
+  margin: 5px;
+}
+.contact > img{
+  margin: 5px;
+  height: 24px;
+}
